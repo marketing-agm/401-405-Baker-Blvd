@@ -55,6 +55,26 @@ year:
 on. The two building photos are the assessor's (400 x 300), and should be replaced with real photography
 when it is available.
 
+## Sample owner report (slide 05)
+The Reporting slide links a sample monthly owner report,
+`assets/agm-sample-commercial-owner-report.pdf`, with a thumbnail of its Financial Overview page,
+`assets/agm-sample-owner-report-financials.jpg`. The PDF is real AGM Report Studio output, not a mock-up:
+the Studio's own parser and commercial PDF engine run on the Studio's fake commercial workbook (a fictional
+"Sample Property", June 2026), with the Test Mode demo signature and SAMPLE watermark, and the bundled
+cover in front. No figures from 401 or 405 Baker Blvd appear in it.
+
+The narrative, notes, projects and marketing entries a property manager would type on the QC screen are in
+`scripts/sample-report/qc-notes.json`; every figure quoted there comes from the workbook. To rebuild the
+PDF, with `marketing-agm/report-studio` cloned beside this repo and `npm ci` run once in its `frontend/`:
+
+```
+python3 scripts/build-sample-report.py
+```
+
+It needs node and python with Report Studio's pinned `reportlab`, `pypdf` and `Pillow`. The script
+rebuilds only the PDF. If the Financial Overview page changes, re-export the thumbnail (page 4 of the PDF,
+1400 px wide JPG).
+
 ## Local preview
 Serve the folder (the images use root-relative paths), e.g. `python3 -m http.server` and open
 `http://localhost:8000`. Deep-link a section with the URL hash, e.g. `#operations`.

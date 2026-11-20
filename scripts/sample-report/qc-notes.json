@@ -1,0 +1,62 @@
+{
+  "_about": "What a property manager types on Report Studio's Commercial QC screen for the sample report. Every figure quoted here comes from the Studio's fake workbook (frontend/public/sample-data/sample-commercial.xlsx, June 2026). Edit the wording here and rerun scripts/build-sample-report.py.",
+  "period": "June 2026",
+  "narrative": "June closed with net operating income of $35,702 against a budget of $54,542. The shortfall is on the income side: the budget assumed Suite 300 (11,500 SF) would be leased by spring, and it remains vacant, which accounts for most of the $18,551 gap in base rent and the $5,966 gap in NNN recoveries. Operating expenses were $910 against a budget of $5,888, a favorable variance that is largely timing: the June management fee and the electric bill post in July. Both in-place tenants paid in full, and there was no delinquency at month end. Cash on hand was $158,716, including a $30,000 capital reserve, after a $15,000 owner distribution in June ($45,000 year to date). The priorities for July are the overdue fire alarm and extinguisher inspections, the water intrusion in vacant Suite 300, and opening renewal talks for Suite 400, whose lease expires January 31, 2027.",
+  "priorMonth": {
+    "occPct": "54.1",
+    "baseRent": "55673.87",
+    "dqTotal": "0"
+  },
+  "pmNotes": {
+    "general": "Site inspections on May 26 and June 16 generated ten work orders, all logged and assigned. Lobby lighting, the suite directory and the roof hatch latch are scheduled for the first half of July. The tenant in Suite 400 reported excess heat on June 1; the HVAC technician found a failed thermostat, which has been replaced, and we are monitoring through the summer.",
+    "maintenance": "Fire and life safety is the priority. The annual fire alarm and fire extinguisher inspections were due in April and are now booked for July 9 with our fire and life safety vendor. Water is entering Suite 300 at the kitchen corner and at a back office window seal; the roofer and glazier inspect on July 7, and we will send ownership a bid before any work over the approval threshold proceeds.",
+    "leasing": "Suite 300 (11,500 SF, third floor) is listed on CoStar and LoopNet. The listing broker reports four tours in June and one second tour from a professional services user looking at about 9,000 SF. The water intrusion repairs need to be finished before the suite is shown again in its current condition.",
+    "renewal_strategy": "Suite 400 (4,699 SF) expires January 31, 2027. We will send the tenant a renewal proposal in August, six months ahead of expiration, at a rate in line with current market rents for comparable space, and report its response in the September package.",
+    "revenue_opportunities": "Parking produced $700 in June that was not in the budget. We are reviewing the remaining stalls for monthly parking agreements with neighboring businesses.",
+    "expense_opportunities": "Year-to-date electrical repairs are $5,014 against a budget of $1,000, mostly from one panel repair in March. We are getting a second bid on the remaining lighting retrofit before approving it.",
+    "delinquency_overview": "No tenant delinquency at June 30. Both tenants paid June rent and NNN charges in full.",
+    "legal": "",
+    "crime": "",
+    "liability": "The overdue fire and life safety inspections are a compliance item until they are complete on July 9. We will confirm completion in the July package."
+  },
+  "projectsPayload": [
+    {
+      "id": "p1",
+      "projectName": "Fire & Life Safety Annual",
+      "scope": "Annual fire alarm panel and fire extinguisher inspection and certification",
+      "estimatedCost": "$1,850",
+      "status": "planning",
+      "notes": "Booked for July 9",
+      "linkedWoNumbers": []
+    },
+    {
+      "id": "p2",
+      "projectName": "Suite 300 Water Intrusion",
+      "scope": "Locate and repair leaks at the kitchen corner and the back office window seal",
+      "estimatedCost": "$4,000 - $6,500",
+      "status": "in_progress",
+      "notes": "Roofer and glazier on site July 7; bid to ownership before work proceeds",
+      "linkedWoNumbers": []
+    },
+    {
+      "id": "p3",
+      "projectName": "Roof Hatch Latch",
+      "scope": "Replace the broken roof access hatch latch assembly",
+      "estimatedCost": "$450",
+      "status": "planning",
+      "notes": "Scheduled with the building engineer's July visit",
+      "linkedWoNumbers": []
+    }
+  ],
+  "marketingPayload": [
+    {
+      "id": "300",
+      "suiteName": "300",
+      "sqft": 11500,
+      "platforms": "CoStar, LoopNet",
+      "broker": "Listing broker",
+      "askingRent": "$4.25/SF/mo NNN",
+      "notes": "4 tours in June; 1 second tour (about 9,000 SF user). Water repairs before next showing."
+    }
+  ]
+}

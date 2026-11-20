@@ -24,6 +24,9 @@ Draft started 2026-11-20 from the Seneca proposal. Every open item below shows i
 - **The preventative maintenance schedule** (slide 04) is a proposed schedule from the assessor data
   (hot-water radiant heat at 401, space heaters at 405, both sprinklered, low-slope roofs visible in the
   2025 aerial). It is set after the engineer's first walk.
+- **Sample owner report** (slide 05) is from a fictional property, signed by the Studio's demo manager
+  and watermarked SAMPLE. Its narrative and notes are illustrative. Swap in a redacted real report only if
+  Ownership asks for one.
 - **Track Record** (Pacific Business Park case study, Mount Si, Clover) is unchanged from Seneca.
 
 ## Release check
